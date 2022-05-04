@@ -1,14 +1,23 @@
-// Generatore di "nomi cognomi" casuali: il Grande Gatsby ha  una lista di nomi e una lista di cognomi, e da queste vuole generare una falsa lista di invitati con nome e cognome.
+// Crea due array che hanno un numero di elementi diversi.  Aggiungi elementi all'array che ha meno elementi fino a quando ne avrà tanti quanti l'altro.
 
-const firstnameList = ["Franco", "Gino", "Billy", "Bobby", "Renzo"];
-const lastnameList = ["Ardi", "Silly", "Borth", "Groot", "Miscia"];
+const array1 = [1, 43, 23, 23, 43, 32, 23];
+const array2 = [3, 33, 53, 23, 43, 23, 23, 43, 32, 23, 43, 23, 23, 43, 32, 23];
 
-let randomName = [];
+let difference = 0;
 
-for (let i = 0; i < 10; i++) {
-    const indexFirstname = Math.floor(Math.random() * firstnameList.length);
-    const indexLastname = Math.floor(Math.random() * lastnameList.length);
-    randomName.push(`${firstnameList[indexFirstname]} ${lastnameList[indexLastname]}`);
+if (array1.length > array2.length) {
+    const difference = array1.length - array2.length;
+    console.log("differenza:", difference);
+    for (let i = 0; i < difference; i++) {
+        array2.push(Math.floor(Math.random() * 100) + 1);
+    }
+} else if (array1.length < array2.length) {
+    const difference = array2.length - array1.length;
+    console.log("differenza:", difference);
+    for (let i = 0; i < difference; i++) {
+        array1.push(Math.floor(Math.random() * 100) + 1);
+    }
 }
 
-console.log(randomName);
+console.log("array1:", array1)
+console.log("array2:", array2)
