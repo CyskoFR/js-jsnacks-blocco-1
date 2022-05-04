@@ -6,8 +6,8 @@ const lastnameList = ["Ardi", "Silly", "Borth", "Groot", "Miscia"];
 let randomName = [];
 
 for (let i = 0; i < 10; i++) {
-    const indexFirstname = Math.floor(Math.random() * 5);
-    const indexLastname = Math.floor(Math.random() * 5);
+    const indexFirstname = Math.floor(Math.random() * firstnameList.length);
+    const indexLastname = Math.floor(Math.random() * lastnameList.length);
     randomName.push(`${firstnameList[indexFirstname]} ${lastnameList[indexLastname]}`);
 }
 
