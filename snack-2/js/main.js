@@ -1,8 +1,10 @@
-const num1 = prompt ("inserisci primo numero")
-const num2 = prompt ("inserisci secondo numero")
+const word1 = prompt ("inserisci prima parola")
+const word2 = prompt ("inserisci seconda parola")
 
-if (num1 > num2) {
-    alert(num1)
+if (word1.length > word2.length) {
+    console.log(word2)
+    console.log(word1)
 } else {
-    alert(num2)
+    console.log(word1)
+    console.log(word2)
 }
