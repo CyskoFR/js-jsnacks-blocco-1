@@ -1,12 +1,3 @@
-const word1 = prompt ("inserisci prima parola")
-const word2 = prompt ("inserisci seconda parola")
-
-if (word1.length > word2.length) {
-    console.log(word2)
-    console.log(word1)
-} else if (word1.length = word2.length) {
-    console.log("stessa lunghezza!")
-} else {
-    console.log(word1)
-    console.log(word2)
-}
+// Crea due tag div con due id diversi:
+// un div avrà il testo colorato di rosso mentre l’altro di verde.
+// Partendo da un array di numeri, stampiamo nell’id rosso i numeri dispari e in verde i numeri pari.
